@@ -1,13 +1,74 @@
 \chapter{Daten}
 
 \section{Datenquelle}
-Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.
+Der Source-Code von Gaia ist öffentlich auf der Webseite GitHub.com verfügbar\footnote{GitHub.com: Gaia Repository. \url{https://github.com/mozilla-b2g/gaia}. Aufgerufen am 05. April 2015.}. Git ist ein Versionsverwaltungssystem, welches in vielen Projekten eingesetzt wird. Darin sind alle Änderungen seit Projektstart verzeichnet. Für jede Änderung wird eine neue Version der Datei erstellt, dies nennt sich im Fachjargon \"Commit\". Insgesamt befinden sich auf dem Projekt 45'591 solche Änderungen (Stand: 05. April 2015, 21:25 Uhr). Zu allen Änderungen werden jeweils auch der Author und andere wichtige Informationen gespeichert.
 
 \section{Datenstand}
-Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.
+Die vorliegende Arbeit beschränkt sich auf die Daten zwischen dem 1. Juli 2013 und dem 31. März 2015. Dieser Zeitraum umfasst 21 Monate mit insgesamt 26'097 Code-Änderungen. Dabei wurden insgesamt 52'233'826 Codezeilen hinzugefügt, 46'933'408 wurden gelöscht. Dies bedeutet, dass das gesamte Projekt in dieser Zeit um 5'300'418 Codezeilen gewachsen ist.
 
 \section{Methode der Datensammlung}
-Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.
+Mit dem Werkzeug GitStats\footnote{Sourceforge: GitStats. \url{http://gitstats.sourceforge.net}. Aufgerufen am 05. April 2015.} kann der Versionsverlauf automatisiert analysiert werden. Dabei werden diverse Tabellen mit Daten erstellt. Zudem werden hilfreiche Grafiken erstellt. Der nachfolgende Befehl wurde am 05. April um 15:30 Uhr ausgeführt. Das Datenset wurde nach diesem Zeitpunkt nicht mehr verändert.
+
+\noindent
+GitStats kann wie folgt gestartet werden:
+
+\begin{lstlisting}
+./gitstats <PfadZumRepository> <Output-Pfad>
+\end{lstlisting}
+
+\noindent
+Das zweite Argument muss ein lokaler Ordner mit dem Git-Repository sein. Der Output-Pfad ist die Ablage für die generierten Daten.
+
+\begin{table}%
+\begin{tabularx}{\textwidth}{p{0.25\textwidth}|r|X|r}
+Monat & Commits & Zeilen hinzugefügt & Zeilen gelöscht\\
+\hline
+2015-03	& 1015	& 65682	& 63254\\
+\hline
+2015-02	& 1054	& 151113	& 68966\\
+\hline
+2015-01	& 1051	& 83204	& 38915\\
+\hline
+2014-12	& 717	& 36177	& 25820\\
+\hline
+2014-11	& 1137	& 115641	& 68708\\
+\hline
+2014-10	& 1399	& 698579	& 162472\\
+\hline
+2014-09	& 1501	& 231320	& 85979\\
+\hline
+2014-08	& 1649	& 564098	& 163910\\
+\hline
+2014-07	& 1571	& 97336	& 44629\\
+\hline
+2014-06	& 1953	& 95207	& 52199\\
+\hline
+2014-05	& 1397	& 117676	& 74816\\
+\hline
+2014-04	& 1356	& 248112	& 211322\\
+\hline
+2014-03	& 1373	& 139912	& 97712\\
+\hline
+2014-02	& 1231	& 11888136	& 11864080\\
+\hline
+2014-01	& 1280	& 17914322	& 17860654\\
+\hline
+2013-12	& 1039	& 4142439	& 2708954\\
+\hline
+2013-11	& 1344	& 315643	& 187441\\
+\hline
+2013-10	& 1103	& 12811632	& 12789663\\
+\hline
+2013-09	& 1114	& 119788	& 66575\\
+\hline
+2013-08	& 1061	& 2170748	& 267816\\
+\hline
+2013-07	& 752	& 227061	& 29523\\
+\end{tabularx}
+\caption{Anzahl Commits pro Monat}
+\end{table}%
+
+Maschinell auswertbare Versionen dieser Daten befinden sich im Appendix oder unter \url{http://www.michaelkohler.info/downloads/Projektarbeit_Gaia.zip}.
 
 \section{Überprüfbarkeit}
-Vivamus fermentum semper porta. Nunc diam velit, adipiscing ut tristique vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies. Curabitur ornare, ligula semper consectetur sagittis, nisi diam iaculis velit, id fringilla sem nunc vel mi. Nam dictum, odio nec pretium volutpat, arcu ante placerat erat, non tristique elit urna et turpis. Quisque mi metus, ornare sit amet fermentum et, tincidunt et orci. Fusce eget orci a orci congue vestibulum. Ut dolor diam, elementum et vestibulum eu, porttitor vel elit. Curabitur venenatis pulvinar tellus gravida ornare. Sed et erat faucibus nunc euismod ultricies ut id justo. Nullam cursus suscipit nisi, et ultrices justo sodales nec. Fusce venenatis facilisis lectus ac semper. Aliquam at massa ipsum. Quisque bibendum purus convallis nulla ultrices ultricies. Nullam aliquam, mi eu aliquam tincidunt, purus velit laoreet tortor, viverra pretium nisi quam vitae mi. Fusce vel volutpat elit. Nam sagittis nisi dui.
+Die Daten basieren auf öffentlich zugänglichen Datenquellen. Daher kann jeder Interessierte die oben genannten Schritte durchführen und erhält die selben Daten.

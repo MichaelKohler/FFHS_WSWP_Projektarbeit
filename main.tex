@@ -24,6 +24,8 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[utf8]{inputenc}
 \usepackage{ngerman}
+\usepackage{listings}
+\usepackage{tabularx}
 
 \usepackage[unicode]{hyperref}
 \hypersetup{pdftitle=Thesis Title, 
@@ -36,6 +38,10 @@
             pdfnewwindow,
             breaklinks
           }
+
+
+\usepackage{parskip}
+\setlength{\parindent}{15pt}
 
 %%% --- CHAPTER TITLES
 \usepackage[T1]{fontenc}
@@ -91,10 +97,6 @@
 \include{kap5}
 
 
-
-%%% References
-\bibliography{bibliografie}
-
 %%% List of figures
 \listoffigures
 
@@ -104,5 +106,6 @@
 %%% The Appendix. 
 \chapter*{Appendix}
 \addcontentsline{toc}{chapter}{Appendix}
+\include{appendix}
 
 \end{document}

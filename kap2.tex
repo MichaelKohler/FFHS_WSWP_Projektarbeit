@@ -7,10 +7,9 @@ Der Source-Code von Gaia ist öffentlich auf der Webseite GitHub.com verfügbar\
 Die vorliegende Arbeit beschränkt sich auf die Daten zwischen dem 1. Juli 2013 und dem 31. März 2015. Dieser Zeitraum umfasst 21 Monate mit insgesamt 26'097 Code-Änderungen. Dabei wurden insgesamt 52'233'826 Codezeilen hinzugefügt, 46'933'408 wurden gelöscht. Dies bedeutet, dass das gesamte Projekt in dieser Zeit um 5'300'418 Codezeilen gewachsen ist.
 
 \section{Methode der Datensammlung}
-Mit dem Werkzeug GitStats\footnote{Sourceforge: GitStats. \url{http://gitstats.sourceforge.net}. Aufgerufen am 05. April 2015.} kann der Versionsverlauf automatisiert analysiert werden. Dabei werden diverse Tabellen mit Daten erstellt. Zudem werden hilfreiche Grafiken erstellt. Der nachfolgende Befehl wurde am 05. April um 15:30 Uhr ausgeführt. Das Datenset wurde nach diesem Zeitpunkt nicht mehr verändert.
+Mit dem Werkzeug GitStats\footnote{Sourceforge: GitStats. \url{http://gitstats.sourceforge.net}. Aufgerufen am 05. April 2015.} kann der Versionsverlauf automatisiert analysiert werden. Dabei werden diverse Tabellen mit Daten erstellt. Zudem werden hilfreiche Grafiken erstellt.
 
-\noindent
-GitStats kann wie folgt gestartet werden:
+Um weitere Daten zu erhalten (Anzahl Autoren und die gesamte Auswertung auf Tagesbasis), wurde das Programm angepasst. Die verbesserte Version kann unter \url{https://github.com/MichaelKohler/gitstats} eingesehen werden. Der nachfolgende Befehl wurde am 19. April ausgeführt. Das Datenset wurde nach diesem Zeitpunkt nicht mehr verändert. GitStats kann wie folgt gestartet werden:
 
 \begin{lstlisting}
 ./gitstats <PfadZumRepository> <Output-Pfad>
@@ -20,55 +19,55 @@ GitStats kann wie folgt gestartet werden:
 Das zweite Argument muss ein lokaler Ordner mit dem Git-Repository sein. Der Output-Pfad ist die Ablage für die generierten Daten.
 
 \begin{table}%
-\begin{tabularx}{\textwidth}{p{0.25\textwidth}|r|X|r}
-Monat & Commits & Zeilen hinzugefügt & Zeilen gelöscht\\
+\begin{tabularx}{\columnwidth}{l|r|r|r|r}
+Monat & Commits & Zeilen hinzugefügt & Zeilen gelöscht & Anzahl Contributors\\
 \hline
-2015-03	& 1015	& 65682	& 63254\\
+2015-03 & 1'042 & 65'704 & 63'257 & 118\\
 \hline
-2015-02	& 1054	& 151113	& 68966\\
+2015-02 & 1'060 & 151'113 & 68'966 & 132\\
 \hline
-2015-01	& 1051	& 83204	& 38915\\
+2015-01 & 1'051 & 83'204 & 38'915 & 143\\
 \hline
-2014-12	& 717	& 36177	& 25820\\
+2014-12 & 717 & 36'177 & 25'820 & 124\\
 \hline
-2014-11	& 1137	& 115641	& 68708\\
+2014-11 & 1'137 & 115'641 & 68'708 & 145\\
 \hline
-2014-10	& 1399	& 698579	& 162472\\
+2014-10 & 1'399 & 698'579 & 162'472 & 162\\
 \hline
-2014-09	& 1501	& 231320	& 85979\\
+2014-09 & 1'501 & 231'320 & 85'979 & 162\\
 \hline
-2014-08	& 1649	& 564098	& 163910\\
+2014-08 & 1'649 & 564'098 & 163'910 & 179\\
 \hline
-2014-07	& 1571	& 97336	& 44629\\
+2014-07 & 1'571 & 97'336 & 44'629 & 172\\
 \hline
-2014-06	& 1953	& 95207	& 52199\\
+2014-06 & 1'953 & 95'207 & 52'199 & 161\\
 \hline
-2014-05	& 1397	& 117676	& 74816\\
+2014-05 & 1'397 & 117'676 & 74'816 & 150\\
 \hline
-2014-04	& 1356	& 248112	& 211322\\
+2014-04 & 1'356 & 248'112 & 211'322 & 152\\
 \hline
-2014-03	& 1373	& 139912	& 97712\\
+2014-03 & 1'373 & 139'912 & 97'712 & 150\\
 \hline
-2014-02	& 1231	& 11888136	& 11864080\\
+2014-02 & 1'231 & 11'888'136 & 11'864'080 & 153\\
 \hline
-2014-01	& 1280	& 17914322	& 17860654\\
+2014-01 & 1'280 & 17'914'322 & 17'860'654 & 152\\
 \hline
-2013-12	& 1039	& 4142439	& 2708954\\
+2013-12 & 1'039 & 4'142'439 & 2'708'954 & 143\\
 \hline
-2013-11	& 1344	& 315643	& 187441\\
+2013-11 & 1'344 & 315'643 & 187'441 & 154\\
 \hline
-2013-10	& 1103	& 12811632	& 12789663\\
+2013-10 & 1'103 & 12'811'632 & 12'789'663 & 143\\
 \hline
-2013-09	& 1114	& 119788	& 66575\\
+2013-09 & 1'114 & 119'788 & 66'575 & 134\\
 \hline
-2013-08	& 1061	& 2170748	& 267816\\
+2013-08 & 1'061 & 2'170'748 & 267'816 & 111\\
 \hline
-2013-07	& 752	& 227061	& 29523\\
+2013-07 & 752 & 227'061 & 29'523 & 101\\
 \end{tabularx}
 \caption{Anzahl Commits pro Monat}
 \end{table}%
 
-Maschinell auswertbare Versionen dieser Daten befinden sich im Appendix oder unter \url{http://www.michaelkohler.info/downloads/Projektarbeit_Gaia.zip}.
+Maschinell auswertbare Versionen dieser Daten befinden sich im Appendix oder unter \url{https://github.com/MichaelKohler/FFHS_WSWP_Projektarbeit}.
 
 \section{Überprüfbarkeit}
 Die Daten basieren auf öffentlich zugänglichen Datenquellen. Daher kann jeder Interessierte die oben genannten Schritte durchführen und erhält die selben Daten.
